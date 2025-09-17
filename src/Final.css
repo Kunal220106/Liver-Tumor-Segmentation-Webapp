@@ -1,0 +1,127 @@
+/* Background Gradient */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      125% 125% at -2% 101%,
+      rgba(245, 87, 2, 1) 10.5%,
+      rgba(245, 120, 2, 1) 16%,
+      rgba(245, 140, 2, 1) 17.5%,
+      rgba(245, 170, 100, 1) 25%,
+      rgba(238, 174, 202, 1) 40%,
+      rgba(202, 179, 214, 1) 65%,
+      rgba(148, 201, 233, 1) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .final-content {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255,255,255,0.98);
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    padding: 2.5rem 2rem;
+    margin: 3rem 1rem;
+  }
+  
+  .final-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #f55702;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .final-section {
+    margin-bottom: 2rem;
+    background: #f8f9fa;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid #f57a02;
+  }
+  
+  .final-section h3 {
+    color: #2d3436;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .final-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .final-section li {
+    margin-bottom: 0.6rem;
+    color: #636e72;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .final-encouragement {
+    margin-top: 2rem;
+    padding: 1.3rem 1rem;
+    background: #fff3e0;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-style: italic;
+    color: #2d3436;
+    font-size: 1.1rem;
+  }
+  
+  .final-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2.5rem 0 1rem;
+  }
+  
+  .final-download-btn {
+    background: #f57a02;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .final-download-btn:hover {
+    background: #c96a0a;
+    transform: translateY(-2px);
+  }
+  
+  .final-home-btn {
+    background: #2d3436;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .final-home-btn:hover {
+    background: #1a1a1a;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 700px) {
+    .final-content {
+      padding: 1.5rem 0.5rem;
+    }
+    .final-title {
+      font-size: 1.4rem;
+    }
+  }
+  
