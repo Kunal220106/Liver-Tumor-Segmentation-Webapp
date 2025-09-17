@@ -1,57 +1,78 @@
-Liver Tumor Segmentation WebApp with SPA-UNet
-<p align="center"> <a href="https://github.com/Kunal220106/Liver-Tumor-Segmentation-Webapp"> <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-github.svg" width="32" /> <b>View Code</b> </a> </p>
-Project Overview
-A professional web application for automating liver tumor segmentation in CT scans using SPA-UNet—an advanced variant of U-Net with improved accuracy for clinical images.
+# Liver Tumor Segmentation WebApp with SPA-UNet
 
-Key Features
-Handles irregular tumor boundaries and low-contrast CT scans
+<p align="center">
+  <a href="https://github.com/Kunal220106/Liver-Tumor-Segmentation-Webapp" title="View Code">
+    <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-github.svg" width="28" alt="GitHub" />
+    &nbsp;<strong>View Code</strong>
+  </a>
+</p>
 
-Real-time results and segmentation visualization
+---
 
-High accuracy: F1 Score 0.9184, Precision 0.9421, Accuracy 97.74% (LiTS dataset)
+## Badges
 
-Automates core radiology workflow
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" alt="Python"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="40" alt="TensorFlow"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="40" alt="Flask"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" alt="React"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecolab/googlecolab-original.svg" width="40" alt="Google Colab"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" alt="CSS3"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" alt="NumPy"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original-wordmark.svg" width="60" alt="Kaggle"/>
+</p>
 
-Model Training Results
-<p align="center"> <img src="https://i.postimg.cc/RF1FkMHw/model-training-results.jpg" width="48%"/> <img src="https://i.postimg.cc/DwWz2QGv/model-training-results-2.jpg" width="48%"/> </p>
-WebApp Demo
-<p align="center"> <img src="https://i.postimg.cc/HxtYSBq2/homepage.jpg" alt="Homepage" width="32%"/> <img src="https://i.postimg.cc/VvGYw5L0/input-page.jpg" alt="Input Page" width="32%"/> <img src="https://i.postimg.cc/XNQNd1cN/result.jpg" alt="Results Page" width="32%"/> </p>
-Homepage Preview  | 
-Input Page Preview  | 
-Results Page Preview
-Datasets
-LiTS Challenge:
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original-wordmark.svg" width="20"/> 201 CT volumes (131 train, 70 test)
-Kaggle Dataset
+---
 
-Tech Stack
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="32" /> Python (Model training)
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="32" /> TensorFlow, Keras
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="32" /> React.js (Frontend)
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="32" /> Flask (Backend)
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecolab/googlecolab-original.svg" width="32" /> Google Colab (Cloud training)
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="32" /> CSS3 (Design)
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="32" /> Numpy, NiBabel, scikit-learn
+## Project Overview
 
-Project Structure
-text
-├── model/                # Trained model files (.h5)
-├── static/               # Frontend assets (CSS, JS)
-├── templates/            # HTML templates
-├── uploads/              # Uploaded CT images
-├── app.py                # Flask backend
-├── index.html            # Upload page
-├── results.html          # Results display page
-Roadmap
-Optimize for real-time clinical inference
+A professional, end-to-end web application for **automated liver tumor segmentation** in CT scans using **SPA-UNet** — an enhanced U-Net variant with **Spatial Pyramid Convolution Blocks (SPCB)** and **Residual Attention (RA)** blocks.
 
-Generalize to multi-organ segmentation
+**Highlights**
+- Automated segmentation and overlay visualization.  
+- Robust against irregular tumor boundaries and low contrast.  
+- **Performance (LiTS):** F1 = 0.9184, Precision = 0.9421, Accuracy = 97.74%.  
+- **Deployment:** Flask backend + React frontend.  
 
-Explore PACS/cloud deployment integration
+---
 
-Acknowledgements
-LiTS Challenge Dataset
+## Preview / Screenshots
 
-SPA-UNet Paper
+**Model Training Results**
+<p align="center">
+  <img src="https://i.postimg.cc/RF1FkMHw/model-training-results.jpg" width="48%"/>
+  <img src="https://i.postimg.cc/DwWz2QGv/model-training-results-2.jpg" width="48%"/>
+</p>
 
-Icons from Devicon, Tabler Icons
+**WebApp Demo (Homepage → Input → Results)**
+<p align="center">
+  <img src="https://i.postimg.cc/HxtYSBq2/homepage.jpg" width="32%"/>
+  <img src="https://i.postimg.cc/VvGYw5L0/input-page.jpg" width="32%"/>
+  <img src="https://i.postimg.cc/XNQNd1cN/result.jpg" width="32%"/>
+</p>
+
+---
+
+## Datasets
+
+- **LiTS (Liver Tumor Segmentation Challenge)**  
+  201 CT volumes (131 training, 70 testing). Annotated masks for liver & tumor.  
+  📂 [Kaggle Dataset](https://www.kaggle.com/datasets/harshwardhanbhangale/lits-dataset)
+
+- **3DIRCADb**  
+  22 CT volumes with expert tumor annotations. Used for validation.  
+
+---
+
+## Tech Stack
+
+- **Model Training**: Python, Google Colab  
+- **Deep Learning**: TensorFlow, Keras  
+- **Pre/Post Processing**: NumPy, NiBabel, Scikit-learn, Matplotlib, scikit-image  
+- **Frontend**: React.js, CSS3  
+- **Backend**: Flask  
+
+---
+
+## Project Structure
+
