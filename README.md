@@ -123,10 +123,11 @@ M Shashank
 Preetham H S
 
 Sinchana M
+
 ---
 ### Acknowledgements & References
 
-Datasets: LiTS Challenge, 3DIRCADb
+Datasets: LiTS Challenge
 
 Papers:
 
