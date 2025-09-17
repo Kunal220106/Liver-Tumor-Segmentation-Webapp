@@ -1,15 +1,5 @@
 # Liver Tumor Segmentation WebApp with SPA-UNet
 
-<p align="center">
-  <a href="https://github.com/Kunal220106/Liver-Tumor-Segmentation-Webapp" title="View Code">
-    <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-github.svg" width="28" alt="GitHub" />
-    &nbsp;<strong>View Code</strong>
-  </a>
-</p>
-
----
-
-## Badges
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" alt="Python"/>
@@ -19,7 +9,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecolab/googlecolab-original.svg" width="40" alt="Google Colab"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" alt="CSS3"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" alt="NumPy"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original-wordmark.svg" width="60" alt="Kaggle"/>
 </p>
 
 ---
@@ -36,19 +25,22 @@ A professional, end-to-end web application for **automated liver tumor segmentat
 
 ---
 
+
 ## Preview / Screenshots
 
-**Model Training Results**
+### Model Training Results
 <p align="center">
-  <img src="https://i.postimg.cc/RF1FkMHw/model-training-results.jpg" width="48%"/>
-  <img src="https://i.postimg.cc/DwWz2QGv/model-training-results-2.jpg" width="48%"/>
+  <img src="https://i.postimg.cc/RF1FkMHw/model-training-results.jpg" width="70%"/>
+</p>
+<p align="center">
+  <img src="https://i.postimg.cc/DwWz2QGv/model-training-results-2.jpg" width="70%"/>
 </p>
 
-**WebApp Demo (Homepage → Input → Results)**
+### WebApp Demo (Homepage → Input → Results)
 <p align="center">
-  <img src="https://i.postimg.cc/HxtYSBq2/homepage.jpg" width="32%"/>
-  <img src="https://i.postimg.cc/VvGYw5L0/input-page.jpg" width="32%"/>
-  <img src="https://i.postimg.cc/XNQNd1cN/result.jpg" width="32%"/>
+  <img src="https://i.postimg.cc/HxtYSBq2/homepage.jpg" width="30%"/>
+  <img src="https://i.postimg.cc/VvGYw5L0/input-page.jpg" width="10%"/>
+  <img src="https://i.postimg.cc/XNQNd1cN/result.jpg" width="30%"/>
 </p>
 
 ---
@@ -57,10 +49,6 @@ A professional, end-to-end web application for **automated liver tumor segmentat
 
 - **LiTS (Liver Tumor Segmentation Challenge)**  
   201 CT volumes (131 training, 70 testing). Annotated masks for liver & tumor.  
-  📂 [Kaggle Dataset](https://www.kaggle.com/datasets/harshwardhanbhangale/lits-dataset)
-
-- **3DIRCADb**  
-  22 CT volumes with expert tumor annotations. Used for validation.  
 
 ---
 
@@ -75,4 +63,73 @@ A professional, end-to-end web application for **automated liver tumor segmentat
 ---
 
 ## Project Structure
+├── model/ # Trained models (.h5)
+├── static/ # Frontend assets (CSS, JS)
+├── templates/ # HTML templates (optional if React is separate)
+├── uploads/ # Uploaded CT images
+├── app.py # Flask backend
+├── index.html # Upload page
+├── results.html # Results page
+├── frontend/ # React app
+└── README.md
 
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.8+  
+- Node.js & npm  
+
+### Backend (Flask)
+
+# create env
+python -m venv venv
+source venv/bin/activate    # macOS/Linux
+venv\Scripts\activate       # Windows
+
+# install deps
+pip install -r requirements.txt
+
+# run backend
+python app.py
+
+### Frontend (React)
+cd frontend
+npm install
+npm start
+
+Default: Flask at http://localhost:5000, React at http://localhost:3000.
+
+---
+
+### Future Conrtibutions
+
+ Real-time inference optimization
+
+ Multi-organ segmentation extension
+
+ Cloud deployment & PACS integration
+
+ Secure user authentication
+ ---
+### Contributors
+
+Kunal M G — Top Contributor
+
+M Shashank
+
+Preetham H S
+
+Sinchana M
+---
+### Acknowledgements & References
+
+Datasets: LiTS Challenge, 3DIRCADb
+
+Papers:
+
+SPA-UNet (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S1361841522003085
+
+PubMed: https://pubmed.ncbi.nlm.nih.gov/37724113/
